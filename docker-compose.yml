@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  cache:
+    #image: oracle/database:12.1.0.2-ee
+    image: oracle:latest
+    container_name: oracle
+    restart: always
+    ports:
+      - 1521:1521
+      - 5500:5500
+    networks:
+      - default
+    volumes:
+      - - /home/oracle/oradata:/opt/oracle/oradata
+
+networks:
+  default:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local
