@@ -1,8 +1,7 @@
 version: '3.9'
 services:
   cache:
-    #image: oracle/database:12.1.0.2-ee
-    image: oracle:latest
+    image: oracle/database:12.1.0.2-ee
     container_name: oracle
     restart: always
     ports:
