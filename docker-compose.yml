@@ -5,8 +5,8 @@ services:
     container_name: oracle
     restart: always
     ports:
-      - 1521:1521
-      - 5500:5500
+      - ${LISTENER_PORT}:1521
+      - ${APP_PORT}:5500
     networks:
       - default
     volumes:
