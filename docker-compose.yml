@@ -10,7 +10,7 @@ services:
     networks:
       - default
     volumes:
-      - - /home/oracle/oradata:/opt/oracle/oradata
+      - /home/oracle/oradata:/opt/oracle/oradata
 
 networks:
   default:
