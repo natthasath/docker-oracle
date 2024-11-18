@@ -14,8 +14,10 @@ services:
 
 networks:
   default:
+    name: docker_oracle_network
     driver: bridge
 
 volumes:
   data:
+    name: docker_oracle_data
     driver: local
